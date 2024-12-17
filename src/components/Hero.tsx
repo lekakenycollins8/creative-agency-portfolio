@@ -3,10 +3,20 @@ import { ArrowRight } from 'lucide-react';
 const Hero = () => {
   return (
     <section className="min-h-screen pt-32 pb-20 relative overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5">
-      {/* Animated background elements */}
+      {/* Floating background elements */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl animate-pulse top-0 -left-48" />
-        <div className="absolute w-[500px] h-[500px] bg-accent/20 rounded-full blur-3xl animate-pulse bottom-0 -right-48" />
+        <div 
+          className="absolute w-[500px] h-[500px] bg-primary/20 rounded-full blur-3xl animate-pulse top-0 -left-48" 
+        />
+        <div 
+          className="absolute w-[500px] h-[500px] bg-accent/20 rounded-full blur-3xl animate-pulse bottom-0 -right-48" 
+        />
+        <div 
+          className="absolute w-32 h-32 bg-primary/30 rounded-full blur-xl animate-bounce delay-700 top-1/4 left-1/4" 
+        />
+        <div 
+          className="absolute w-24 h-24 bg-accent/30 rounded-full blur-xl animate-bounce delay-1000 bottom-1/4 right-1/4" 
+        />
       </div>
       
       <div className="container mx-auto px-4 relative">
@@ -25,6 +35,10 @@ const Hero = () => {
             <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={20} />
           </a>
         </div>
+
+        {/* Decorative elements */}
+        <div className="absolute top-1/2 left-10 w-20 h-20 border-2 border-primary/20 rounded-full animate-spin-slow [animation-duration:15s]" />
+        <div className="absolute bottom-1/4 right-10 w-32 h-32 border-2 border-accent/20 rounded-full animate-spin-slow [animation-duration:20s]" />
       </div>
     </section>
   );
