@@ -1,6 +1,14 @@
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
 
 const Contact = () => {
+  const socialLinks = [
+    { Icon: Facebook, href: "https://facebook.com" },
+    { Icon: Instagram, href: "https://instagram.com" },
+    { Icon: Linkedin, href: "https://linkedin.com" },
+    { Icon: Twitter, href: "https://twitter.com" },
+    { Icon: Youtube, href: "https://youtube.com" }
+  ];
+
   return (
     <section id="contact" className="py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5 -z-10" />
@@ -52,13 +60,7 @@ const Contact = () => {
             <div className="pt-8 border-t">
               <h3 className="text-lg font-bold mb-4">Connect With Us</h3>
               <div className="flex space-x-4">
-                {[
-                  { icon: Facebook, href: "https://facebook.com" },
-                  { icon: Instagram, href: "https://instagram.com" },
-                  { icon: Linkedin, href: "https://linkedin.com" },
-                  { icon: Twitter, href: "https://twitter.com" },
-                  { icon: Youtube, href: "https://youtube.com" }
-                ].map((social, index) => (
+                {socialLinks.map((social, index) => (
                   <a
                     key={index}
                     href={social.href}
@@ -66,7 +68,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="p-3 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group"
                   >
-                    <social.icon className="w-5 h-5 text-primary group-hover:text-accent transition-colors" />
+                    <social.Icon className="w-5 h-5 text-primary group-hover:text-accent transition-colors" />
                   </a>
                 ))}
               </div>
