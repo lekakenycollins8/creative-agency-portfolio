@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -34,6 +34,27 @@ const Contact = () => {
               <div>
                 <h3 className="text-lg font-bold mb-1">Visit Us</h3>
                 <p className="text-gray-600">123 Agency Street, City, Country</p>
+              </div>
+            </div>
+
+            <div className="pt-8">
+              <h3 className="text-lg font-bold mb-4">Connect With Us</h3>
+              <div className="flex space-x-4">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors">
+                  <Facebook className="w-6 h-6 text-primary" />
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors">
+                  <Instagram className="w-6 h-6 text-primary" />
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors">
+                  <Linkedin className="w-6 h-6 text-primary" />
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors">
+                  <Twitter className="w-6 h-6 text-primary" />
+                </a>
+                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors">
+                  <Youtube className="w-6 h-6 text-primary" />
+                </a>
               </div>
             </div>
           </div>
