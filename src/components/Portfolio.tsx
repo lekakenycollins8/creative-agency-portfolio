@@ -39,31 +39,43 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="py-20">
+    <section id="portfolio" className="py-20 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-background to-primary/5 -z-10" />
+      <div className="absolute w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl -bottom-48 -right-48 animate-pulse" />
+      
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-serif font-bold mb-4">Our Portfolio</h2>
+          <h2 className="text-4xl font-serif font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            Our Portfolio
+          </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Explore our latest projects and see how we've helped businesses transform their digital presence.
           </p>
         </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="absolute bottom-0 p-6 text-white">
-                  <p className="text-sm font-medium mb-2">{project.category}</p>
-                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-sm opacity-90">{project.description}</p>
-                </div>
+              <div className="absolute inset-0 p-6 flex flex-col justify-end translate-y-8 group-hover:translate-y-0 transition-transform duration-500">
+                <span className="text-sm font-medium text-primary/80 bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full w-fit mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                  {project.category}
+                </span>
+                <h3 className="text-xl font-bold text-white mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
+                  {project.title}
+                </h3>
+                <p className="text-white/90 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-300">
+                  {project.description}
+                </p>
               </div>
             </div>
           ))}
