@@ -7,15 +7,15 @@ import { ExternalLink, X } from 'lucide-react';
 
 const projects = [
   {
-    title: "E-commerce Platform",
-    description: "A modern e-commerce solution with seamless user experience",
+    title: "Micro-finance Platform",
+    description: "A modern microfinance solution with seamless user experience",
     image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80",
     category: "Web Development",
     details: {
-      client: "Global Retail Inc.",
+      client: "Brighter-World Programme",
       duration: "4 months",
       technologies: ["React", "Node.js", "MongoDB"],
-      link: "https://example.com",
+      link: "https://github.com/Giddy14hs/FIFA",
       gallery: [
         "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
@@ -28,10 +28,10 @@ const projects = [
     image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&q=80",
     category: "App Design",
     details: {
-      client: "FinTech Solutions",
-      duration: "6 months",
-      technologies: ["React Native", "Firebase", "Redux"],
-      link: "https://example.com",
+      client: "Power Learn Project",
+      duration: "1 months",
+      technologies: ["Dart with Flutter", "Firebase", "Redux"],
+      link: "https://github.com/Giddy14hs/Flutter-Week8",
       gallery: [
         "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?auto=format&fit=crop&w=800&q=80",
@@ -39,15 +39,15 @@ const projects = [
     },
   },
   {
-    title: "Healthcare Platform",
-    description: "Connecting patients with healthcare providers",
+    title: "Employment Platform",
+    description: "Connecting job seekers with employers",
     image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
-    category: "Healthcare",
+    category: "Employment",
     details: {
-      client: "MedConnect",
-      duration: "5 months",
-      technologies: ["Vue.js", "Python", "PostgreSQL"],
-      link: "https://example.com",
+      client: "Codsoft",
+      duration: "1 months",
+      technologies: ["React", "Node.js", "MySQL"],
+      link: "https://github.com/Giddy14hs/Youth-Hub",
       gallery: [
         "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80",

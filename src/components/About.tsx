@@ -1,23 +1,18 @@
+import Image1 from "../images/image1.jpg"
+import Image2 from "../images/image2.jpg"
+
 const teamMembers = [
   {
-    name: "Sarah Johnson",
-    role: "Creative Director",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80",
+    name: "Gideon Lemiso",
+    role: "Full-Stack developer/Mobile app develpoer",
+    image: {Image1}
+    // image: "https://1drv.ms/i/c/69e420f736ee1cfb/ESBr7STmcNBHkyQeV2IslMABaOwJfaCA3YTVKWG3Zz-cqw?e=r237H9",
   },
   {
-    name: "Michael Chen",
-    role: "Technical Lead",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    name: "Emily Rodriguez",
-    role: "Design Lead",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    name: "David Kim",
-    role: "Project Manager",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
+    name: "Collins Lekakeny",
+    role: "Junior Backend Developer/Full-Stack Developer",
+    image: {Image2}
+    // image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
   },
 ];
 

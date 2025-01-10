@@ -7,6 +7,7 @@ import Contact from "@/components/Contact";
 import Skills from "@/components/Skills";
 import Timeline from "@/components/Timeline";
 import Pricing from "@/components/Pricing";
+import FAQAccordion from "@/components/FAQAccordion/AccordionFAQ";
 
 const Index = () => {
   return (
@@ -16,7 +17,8 @@ const Index = () => {
       <Services />
       <Portfolio />
       <Skills />
-      <Timeline />
+      {/* <Timeline /> */}
+      <FAQAccordion />
       <Pricing />
       <About />
       <Contact />

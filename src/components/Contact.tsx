@@ -33,7 +33,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-lg font-bold mb-1 group-hover:text-primary transition-colors">Email Us</h3>
-                <p className="text-gray-600">contact@agency.com</p>
+                <p className="text-gray-600">lemisogideon@gmail.com</p>
               </div>
             </div>
 
@@ -43,7 +43,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-lg font-bold mb-1 group-hover:text-primary transition-colors">Call Us</h3>
-                <p className="text-gray-600">+1 (555) 123-4567</p>
+                <p className="text-gray-600">+254 745 113 186 or +254 702 274 352</p>
               </div>
             </div>
 
@@ -53,7 +53,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-lg font-bold mb-1 group-hover:text-primary transition-colors">Visit Us</h3>
-                <p className="text-gray-600">123 Agency Street, City, Country</p>
+                <p className="text-gray-600">Pena Towers Kitengela, Nairobi, Kenya</p>
               </div>
             </div>
 

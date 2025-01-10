@@ -12,11 +12,6 @@ const services = [
     description: "Custom websites and applications built with cutting-edge technologies and best practices."
   },
   {
-    icon: Megaphone,
-    title: "Digital Marketing",
-    description: "Data-driven marketing strategies to increase your brand visibility and reach."
-  },
-  {
     icon: Target,
     title: "Brand Strategy",
     description: "Comprehensive brand development to help you stand out in your industry."
