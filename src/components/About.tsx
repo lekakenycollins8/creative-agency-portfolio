@@ -1,18 +1,14 @@
-import Image1 from "../images/image1.jpg"
-import Image2 from "../images/image2.jpg"
 
 const teamMembers = [
   {
     name: "Gideon Lemiso",
     role: "Full-Stack developer/Mobile app develpoer",
-    image: {Image1}
-    // image: "https://1drv.ms/i/c/69e420f736ee1cfb/ESBr7STmcNBHkyQeV2IslMABaOwJfaCA3YTVKWG3Zz-cqw?e=r237H9",
+    image: "https://1drv.ms/i/c/69e420f736ee1cfb/ESBr7STmcNBHkyQeV2IslMABaOwJfaCA3YTVKWG3Zz-cqw?e=r237H9",
   },
   {
     name: "Collins Lekakeny",
     role: "Junior Backend Developer/Full-Stack Developer",
-    image: {Image2}
-    // image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
   },
 ];
 
@@ -32,7 +28,7 @@ const About = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-16 lg:gap-24">
           {teamMembers.map((member, index) => (
             <div
               key={index}
