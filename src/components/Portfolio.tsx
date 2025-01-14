@@ -214,7 +214,7 @@ const Portfolio = () => {
 
         {/* Project Modal */}
         <Dialog open={!!selectedProject} onOpenChange={() => setSelectedProject(null)}>
-          <DialogContent className="w-full max-w-4xl mx-auto p-4 sm:p-6 md:p-8">
+          <DialogContent className="w-full max-w-4xl mx-auto p-6 sm:p-6 md:p-8">
             {selectedProject && (
               <>
                 <DialogHeader>
