@@ -8,11 +8,12 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: 'Web Design', percentage: 90, color: 'custom-gradient' },
-  { name: 'UI/UX Design', percentage: 85, color: 'custom-gradient' },
-  { name: 'Brand Identity', percentage: 80, color: 'custom-gradient' },
+  { name: 'Fullstack Development', percentage: 90, color: 'custom-gradient' },
+  { name: 'Web Design & Development', percentage: 85, color: 'custom-gradient' },
+  { name: 'Database Management', percentage: 80, color: 'custom-gradient' },
+  { name: 'API Development & Integration', percentage: 80, color: 'custom-gradient' },
+  { name: 'Project Management & Collaboration', percentage: 80, color: 'custom-gradient' },
   { name: 'Digital Marketing', percentage: 75, color: 'custom-gradient' },
-  { name: 'Motion Graphics', percentage: 70, color: 'custom-gradient' },
 ];
 
 const Skills = () => {
@@ -75,9 +76,9 @@ const Skills = () => {
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { number: "250+", label: "Projects Completed" },
-            { number: "50+", label: "Happy Clients" },
-            { number: "10+", label: "Years Experience" }
+            { number: "20+", label: "Projects Completed" },
+            { number: "10+", label: "Happy Clients" },
+            { number: "3+", label: "Years Experience" }
           ].map((stat, index) => (
             <motion.div
               key={stat.label}

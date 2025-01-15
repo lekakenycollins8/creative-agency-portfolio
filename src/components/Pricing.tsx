@@ -12,28 +12,26 @@ interface PricingTier {
 const pricingTiers: PricingTier[] = [
   {
     name: "Starter",
-    price: "$499",
+    price: "$150",
     description: "Perfect for small businesses and startups",
     features: [
       "Custom Website Design",
       "Mobile Responsive",
       "3 Pages",
       "Contact Form",
-      "Basic SEO",
+      "Basic API integrations",
       "30 Days Support"
     ]
   },
   {
     name: "Professional",
-    price: "$999",
+    price: "$350",
     description: "Ideal for growing businesses",
     features: [
       "Everything in Starter",
       "Up to 10 Pages",
-      "Advanced SEO",
-      "Social Media Integration",
-      "Blog Setup",
-      "E-commerce Integration",
+      "Advanced API integrations (e.g., CRMs, analytics).",
+      "Dynamic features like user dashboards and admin panels.",
       "60 Days Support",
       "Performance Optimization"
     ],
@@ -41,7 +39,7 @@ const pricingTiers: PricingTier[] = [
   },
   {
     name: "Enterprise",
-    price: "$1,999",
+    price: "$1000",
     description: "For large scale organizations",
     features: [
       "Everything in Professional",
@@ -126,7 +124,8 @@ const Pricing = () => {
                 ))}
               </ul>
 
-              <motion.button
+              <a href="#contact">
+                <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className={`w-full py-3 px-6 rounded-lg font-medium transition-shadow ${
@@ -137,6 +136,7 @@ const Pricing = () => {
               >
                 Get Started
               </motion.button>
+              </a>
             </motion.div>
           ))}
         </div>
@@ -150,9 +150,11 @@ const Pricing = () => {
           <p className="text-muted-foreground mb-4">
             Need a custom plan? We've got you covered.
           </p>
+          <a href="#contact">
           <button className="gradient-text font-medium hover:opacity-80 transition-opacity">
             Contact Us for Custom Solutions →
           </button>
+          </a>
         </motion.div>
       </div>
     </section>

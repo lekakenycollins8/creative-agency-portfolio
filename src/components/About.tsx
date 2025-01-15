@@ -3,12 +3,12 @@ const teamMembers = [
   {
     name: "Gideon Lemiso",
     role: "Full-Stack developer/Mobile app develpoer",
-    image: "https://1drv.ms/i/c/69e420f736ee1cfb/ESBr7STmcNBHkyQeV2IslMABaOwJfaCA3YTVKWG3Zz-cqw?e=r237H9",
+    image: "https://media-hosting.imagekit.io//ed02bd5dbfcb4c7f/giddy.jpg?Expires=1831556093&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=yZzLY5rN~NSQaMRCsohy~tBswJrVgMAWJXc~6m9CFuHz7Gp6QIhYoFToleoWlr5WPu-12RyteB4zmjY9dzRsOhLTzp6uX96wsZ2FBP8N0ketouw2lOoVgBqDhP1ezfWh0Tiqabtx9Nj-GtDGHAOvKb-BqscrKLvhQOIMoFNfk~z4eXRV6-FSG2rS573mMZ4QKCfZamjTQVIQF7vegHVSwj2z0oS~JNnpCKqCY8XHXh7lhpG0tlqbuXrsCXFcKM0UpZBiqW9xz3FsliXOfvyw4TLSQzz65-UnqXZSZ-ZZHp3B9iQpmjGbIuNUwA0c~VqVGmyLPTC9c~IKzFB~m8OpOw__",
   },
   {
     name: "Collins Lekakeny",
-    role: "Junior Backend Developer/Full-Stack Developer",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    role: "Backend Developer/Full-Stack Developer",
+    image: "https://media-hosting.imagekit.io//0797c33d2b16404a/pfp.jpg?Expires=1831556185&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=ZnbGkcI5gkkLJXzXYJJpUYZYqJSy7KqmaYdctpGtHpx89TN6YxkE-qVExJNZvZmyt70-yJJXN3J-YTTRWS627j8wVjsvHjTffTdwLbLkiMD7K0YFJFKyYRfZZEQ14UfkcUHBrlkSNSVdJrgAa~OjQD4OZWawW9GtvoULne04ewonS1lHLPikhoip827AN1MMwbWJqPYyIV1qbS4ygptNnFJl5g6Nx~R8RrpssrruE-KF4BsiaWFKVnjC9f1HfkURgxk9fbNMwNewurHZ4CC2aJYypEjzJzWmD4oWw42fb5DCCXl0G7pVWvYcJlxii317aRoun4UrUeyxPSFZ0QD-lw__",
   },
 ];
 

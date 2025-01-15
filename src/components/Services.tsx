@@ -1,20 +1,25 @@
-import { Briefcase, Megaphone, Computer, Target } from "lucide-react";
+import { BugOff, FileCode2, Computer, Codesandbox} from "lucide-react";
 
 const services = [
   {
-    icon: Briefcase,
-    title: "Strategic Consulting",
-    description: "Expert guidance to help your business grow and succeed in today's competitive market."
+    icon: Codesandbox,
+    title: "Fullstack Application Development",
+    description: "We specialize in building robust and scalable applications tailored to your business needs."
   },
   {
     icon: Computer,
-    title: "Web Development",
-    description: "Custom websites and applications built with cutting-edge technologies and best practices."
+    title: "Web Design & Development",
+    description: "Crafting websites that are visually appealing, user-friendly, and performance-driven."
   },
   {
-    icon: Target,
-    title: "Brand Strategy",
-    description: "Comprehensive brand development to help you stand out in your industry."
+    icon: FileCode2,
+    title: "API Integration and Development",
+    description: "Effortlessly connect your business with the tools and platforms you rely on."
+  },
+  {
+    icon: BugOff,
+    title: "Maintenance & Support",
+    description: "Ensure your applications and websites remain up-to-date and high-performing"
   }
 ];
 
@@ -35,7 +40,7 @@ const Services = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 md:gap-16 lg:gap-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-16 lg:gap-24">
           {services.map((service, index) => (
             <div
               key={index}

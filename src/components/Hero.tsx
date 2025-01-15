@@ -22,10 +22,13 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h1 className="text-6xl md:text-7xl font-serif font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-fade-up">
-            We Create Digital Products That Make Life Better
+            Empowering Businesses with Scalable Software Solutions
           </h1>
           <p className="text-xl text-gray-600 mb-8 animate-fade-up [animation-delay:200ms] leading-relaxed">
-            Award-winning agency crafting innovative digital experiences that help businesses grow and succeed in the modern world.
+            We help businesses achieve their goals with full-stack applications, seamless API integrations, and custom-designed websites that drive growth and efficiency.
+          </p>
+          <p className="text-lg text-gray-500 mb-6 animate-fade-up [animation-delay:300ms] leading-relaxed italic">
+            Tailored digital solutions for businesses of all sizes—because your success is our priority.
           </p>
           <a
             href="#contact"

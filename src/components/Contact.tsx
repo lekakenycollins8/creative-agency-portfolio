@@ -1,13 +1,41 @@
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
+import { useForm } from '@formspree/react';
+import { useState } from 'react';
+import { Alert, AlertTitle, AlertDescription } from './ui/alert';
 
 const Contact = () => {
   const socialLinks = [
-    { Icon: Facebook, href: "https://facebook.com" },
-    { Icon: Instagram, href: "https://instagram.com" },
-    { Icon: Linkedin, href: "https://linkedin.com" },
-    { Icon: Twitter, href: "https://twitter.com" },
-    { Icon: Youtube, href: "https://youtube.com" }
+    { Icon: Instagram, href: "https://www.instagram.com/creativesolutions_25/#" },
+    { Icon: Linkedin, href: "https://www.linkedin.com/in/lekakenycollins8/" },
+    { Icon: Twitter, href: "https://x.com/leky_reborn" },
   ];
+  const [state, handleSubmit] = useForm("xzzzwgdb");
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  if (state.succeeded) {
+    return (
+    <div>
+      <Alert variant="default">
+        <AlertTitle>Success!</AlertTitle>
+        <AlertDescription>
+          Thanks for reaching out! We&apos;ll get back to you soon.
+        </AlertDescription>
+      </Alert>
+    </div>
+  );
+  }
 
   return (
     <section id="contact" className="py-20 relative overflow-hidden">
@@ -33,7 +61,9 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="text-lg font-bold mb-1 group-hover:text-primary transition-colors">Email Us</h3>
+                <a href="mailto:lemisogideon@gmail.com">
                 <p className="text-gray-600">lemisogideon@gmail.com</p>
+                </a>
               </div>
             </div>
 
@@ -75,11 +105,15 @@ const Contact = () => {
             </div>
           </div>
 
-          <form className="space-y-6 bg-white/50 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20">
+          <form onSubmit={handleSubmit} className="space-y-6 bg-white/50 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-white/20">
             <div>
               <input
                 type="text"
                 placeholder="Your Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary bg-white/50 backdrop-blur-sm transition-all duration-300"
               />
             </div>
@@ -87,6 +121,9 @@ const Contact = () => {
               <input
                 type="email"
                 placeholder="Your Email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary bg-white/50 backdrop-blur-sm transition-all duration-300"
               />
             </div>
@@ -94,11 +131,15 @@ const Contact = () => {
               <textarea
                 rows={4}
                 placeholder="Your Message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary bg-white/50 backdrop-blur-sm transition-all duration-300"
               ></textarea>
             </div>
             <button
               type="submit"
+              disabled={state.submitting}
               className="w-full bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-xl hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
             >
               Send Message
