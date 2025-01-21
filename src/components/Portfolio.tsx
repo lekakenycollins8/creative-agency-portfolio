@@ -15,7 +15,7 @@ const projects = [
       client: "Brighter-World Programme",
       duration: "4 months",
       technologies: ["React", "Node.js", "MongoDB"],
-      link: "https://github.com/Giddy14hs/FIFA",
+      link: "brighter-programme.vercel.app",
       gallery: [
         "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
@@ -31,7 +31,7 @@ const projects = [
       client: "Power Learn Project",
       duration: "1 months",
       technologies: ["Dart with Flutter", "Firebase", "Redux"],
-      link: "https://github.com/Giddy14hs/Flutter-Week8",
+      link: "pocket-bank-silk.vercel.app",
       gallery: [
         "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?auto=format&fit=crop&w=800&q=80",
@@ -47,7 +47,7 @@ const projects = [
       client: "Codsoft",
       duration: "1 months",
       technologies: ["React", "Node.js", "MySQL"],
-      link: "https://github.com/Giddy14hs/Youth-Hub",
+      link: "board-job-a192.vercel.app",
       gallery: [
         "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
         "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80",
